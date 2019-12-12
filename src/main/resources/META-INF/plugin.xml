@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>intellijtemplate.djaka.id.intellijtemplate</id>
+    <name>Intelij Template</name>
+    <vendor email="test@gmail.com" url="http://www.djaka.id">Djaka Pradana</vendor>
+
+    <description>It's just a little short experiment hehehe</description>
+
+    <!--depend on kotlin plugin-->
+    <depends>org.jetbrains.kotlin</depends>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="MyAction" class="action.MyAction" text="MyAction"
+                description="MyAction">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
